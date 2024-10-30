@@ -202,3 +202,29 @@ const maximumLimit = 1000;
 
 const belowOrEqual = account_Balance2 <= maximumLimit;
 console.log(`Balance is below or equal to the maximum limit: ${belowOrEqual}`); // true
+
+// ------- ** Strings and Template Literals
+
+const first_Name = 'Anil';
+const current_Job = 'Front-End Developer';
+const birth_Year = 2002;
+const now_Year = 2024;
+
+// String Concatenation
+const anil =
+  "I'm " +
+  first_Name +
+  ', a ' +
+  (now_Year - birthYear) +
+  ' years old ' +
+  current_Job +
+  '!';
+
+console.log(anil);
+
+// String Template Literals (Interpolation)
+const newAnil = `I'm ${first_Name}, a ${
+  now_Year - birthYear
+} years old ${current_Job}!`;
+
+console.log(newAnil);
