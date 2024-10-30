@@ -249,3 +249,29 @@ console.log('23' / '2');
 let n = '1' + 1;
 n -= 1; // n = n - 1;
 console.log(n);
+
+// ------- ** Taking Decision (if/else statements)
+
+// --- An if, else if, and else statement each consist of a condition evaluated as true or false, and a block of code.
+
+// 1. Check If Driver's License Is Valid
+
+let age = 17;
+if (age >= 18) {
+  console.log('You can start getting a driving license');
+} else {
+  let yearsLeft = 18 - age;
+  console.log(`You are too young. Wait another ${yearsLeft} years`);
+}
+
+// 2. Decide If the Weather Conditions Are Safe for Driving
+
+let weatherCondition = 'Snowy';
+
+if (weatherCondition === 'Clear') {
+  console.log('Weather conditions are clear. You can drive safely.');
+} else {
+  console.log(
+    'Weather conditions are not ideal for driving. Please exercise caution.'
+  );
+}
