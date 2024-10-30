@@ -136,3 +136,69 @@ console.log(`Quantity after adding an item: ${cartQuantity}`); // 2
 // Decrement (--)
 cartQuantity--; // Decrement quantity by 1
 console.log(`Quantity after removing an item: ${cartQuantity}`); // 1
+
+// ----- • Comparison Operators
+
+// 1. Equal to (==)
+
+const balance1 = 1500;
+const balance2 = '1500'; // String type
+
+const isEqual = balance1 == balance2; // Compares with type coercion
+console.log(`Balances are equal: ${isEqual}`); // true
+
+// 2. Strict Equality (===)
+
+const enteredCode = 12345;
+const expectedCode = '12345'; // String type
+
+const isStrictlyEqual = enteredCode === expectedCode; // Strict comparison
+console.log(`Payment code matches: ${isStrictlyEqual}`); // false
+
+// 3. Not Equal to (!=)
+
+const currentBalance = 800;
+const minimumRequiredBalance = 1000;
+
+const isNotEqual = currentBalance != minimumRequiredBalance;
+console.log(`Balance is not equal to the required minimum: ${isNotEqual}`); // true
+
+// 4. Strict Not Equal to (!==)
+
+const accountNumber = 123456;
+const inputAccountNumber = '123456'; // String type
+
+const isNotStrictlyEqual = accountNumber !== inputAccountNumber; // Strict comparison
+console.log(`Account number matches: ${isNotStrictlyEqual}`); // true
+
+// 5. Greater Than (>)
+
+// const accountBalance = 1500;
+const threshold = 1000;
+
+const exceedsThreshold = accountBalance > threshold;
+console.log(`Balance exceeds threshold: ${exceedsThreshold}`); // true
+
+// 6. Greater Than or Equal To (>=)
+
+// const accountBalance = 1500;
+const minimumBalance = 1500;
+
+const meetsMinimum = accountBalance >= minimumBalance;
+console.log(`Balance meets or exceeds minimum: ${meetsMinimum}`); // true
+
+// 7. Less Than (<)
+
+const account_Balance1 = 500;
+const withdrawal_Amount = 600;
+
+const isLessThanAvailable = account_Balance1 < withdrawal_Amount;
+console.log(`Insufficient funds for withdrawal: ${isLessThanAvailable}`); // true
+
+// 8. Less Than or Equal To (<=)
+
+const account_Balance2 = 900;
+const maximumLimit = 1000;
+
+const belowOrEqual = account_Balance2 <= maximumLimit;
+console.log(`Balance is below or equal to the maximum limit: ${belowOrEqual}`); // true
