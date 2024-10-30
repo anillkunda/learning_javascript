@@ -228,3 +228,24 @@ const newAnil = `I'm ${first_Name}, a ${
 } years old ${current_Job}!`;
 
 console.log(newAnil);
+
+// ----- ** Type Conversion and Coercion
+
+// Type conversion is when we manually convert from one type to another.
+const inputYear = '2002';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Anil'));
+console.log(typeof NaN);
+
+console.log(String(21), 21);
+
+// Type coercion is when javascript automatically converts types.
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1;
+n -= 1; // n = n - 1;
+console.log(n);
