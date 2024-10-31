@@ -368,3 +368,25 @@ switch (dayOfWeek) {
     console.log('Invalid day of the week.');
     break;
 }
+
+// ------- ** Ternary Operator
+
+// condition ? value if true : value if false
+
+// 1. Check If Driver's License Is Valid
+
+let licenseExpired = false;
+console.log(
+  !licenseExpired
+    ? "Your driver's license is valid. You are able to drive."
+    : "Your driver's license has expired. You cannot drive."
+);
+
+// 2. Check If the Fuel Level Is Sufficient
+
+let fuelLevel = 5; // in gallons
+console.log(
+  fuelLevel > 2
+    ? 'You have enough fuel to drive.'
+    : 'Low fuel level. Please refuel before driving.'
+);
