@@ -275,3 +275,22 @@ if (weatherCondition === 'Clear') {
     'Weather conditions are not ideal for driving. Please exercise caution.'
   );
 }
+
+// ------- ** Truthy and Falsy Values
+
+// --- Truthy expressions always evaluate to boolean true and falsy evaluate to boolean false.
+
+// --- 5 falsy values: 0, '', undefined, null, NaN
+
+if (0) {
+  console.log('In Here');
+} else {
+  console.log('No, In Here!');
+}
+
+const money = 1000;
+if (money) {
+  console.log("Don't spend it all");
+} else {
+  console.log('You should get a Job!');
+}
