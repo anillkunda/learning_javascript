@@ -337,3 +337,34 @@ if (hasDriverdLicense && hasGoodVision && isTired) {
 } else {
   console.log('Someone else should drive...');
 }
+
+// ------- ** Switch Statement
+
+// 1: Task Planning for Each Day
+
+let dayOfWeek = 'Monday'; // Can be 'Monday', 'Tuesday', etc.
+
+switch (dayOfWeek) {
+  case 'Monday':
+    console.log("Review last week's work and plan tasks for the week.");
+    break;
+  case 'Tuesday':
+    console.log('Work on feature implementation.');
+    break;
+  case 'Wednesday':
+    console.log('Attend team meetings and code reviews.');
+    break;
+  case 'Thursday':
+    console.log('Fix bugs and address technical debt.');
+    break;
+  case 'Friday':
+    console.log('Work on documentation and prepare for the next week.');
+    break;
+  case 'Saturday':
+  case 'Sunday':
+    console.log('Relax and enjoy your weekend.');
+    break;
+  default:
+    console.log('Invalid day of the week.');
+    break;
+}
