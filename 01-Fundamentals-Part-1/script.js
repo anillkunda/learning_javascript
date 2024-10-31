@@ -294,3 +294,46 @@ if (money) {
 } else {
   console.log('You should get a Job!');
 }
+
+// ------- ** Logical Operators [&&, ||, !]
+
+// --- Logical operators are used combine two or more conditions.
+
+// AND && Operators --> All operands are true => true.
+
+console.log(true && true && true); // true
+console.log(true && true && false); // false
+
+// OR || Operators --> At least one operands is true => true
+
+console.log(true && true && true); // true
+console.log(true && false && false); // true
+
+// NOT ! Operators --> It reverses the boolean result of the condition.
+
+console.log(!true); // false
+console.log(!false); // true
+
+// 1. Driving eligibility check
+
+const hasDriverdLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriverdLicense && hasGoodVision);
+console.log(hasDriverdLicense || hasGoodVision);
+console.log(!hasDriverdLicense);
+
+// if (hasDriverdLicense && hasGoodVision) {
+//   console.log("Anil is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; // C
+console.log(hasDriverdLicense && hasGoodVision && !isTired);
+
+if (hasDriverdLicense && hasGoodVision && isTired) {
+  console.log('Anil is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
