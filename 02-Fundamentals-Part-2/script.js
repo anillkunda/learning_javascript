@@ -84,3 +84,65 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1990, 'Anil'));
 console.log(yearsUntilRetirement(1991, 'Manoj'));
+
+// ------- ** Arrays
+
+// --- Arrays in javascript are data structures used to store multiple values in single variable.
+
+const friends = ['Manoj', 'Gagan', 'Mallesh'];
+console.log(friends);
+
+const years = new Array(2000, 2001, 2002);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+const firstName = 'Anil';
+// const anil = [firstName, "Kunda", 2024 - 2002, "Developer", friends];
+// console.log(anil);
+
+// Exercise
+
+const calcAge5 = function (birthYear) {
+  return 2025 - birthYear;
+};
+const years2 = [1992, 1998, 2002, 2004];
+
+const age1 = calcAge5(years[0]);
+const age2 = calcAge5(years[1]);
+const age3 = calcAge5(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge5(years[0]),
+  calcAge5(years[1]),
+  calcAge5(years[years.length - 1]),
+];
+console.log(ages);
+
+// ----- Basic Arrays Operations (Methods)
+
+const friends2 = ['Manoj', 'Gagan', 'Mallesh'];
+
+// Add Elements
+const newLength = friends.push('Vishnu');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('Anil');
+console.log(friends);
+
+// Remove elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Gagan'));
+console.log(friends.indexOf('Mallesh'));
+console.log(friends.includes('Gagan'));
+console.log(friends.includes('Pradeep'));
